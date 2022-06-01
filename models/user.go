@@ -9,3 +9,7 @@ type User struct {
 	CreatedAt *time.Time `json:"created_at,string,omitempty"`
 	UpdatedAt *time.Time `json:"updated_at,string,omitempty"`
 }
+
+func (u *User) TableName() string {
+	return "users"
+}
