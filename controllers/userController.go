@@ -30,3 +30,7 @@ func (u *UserController) AddUser(ctx *gin.Context) {
 
 	ctx.JSON(200, &user)
 }
+
+func (u *UserController) GetUser(ctx *gin.Context) {
+
+}
